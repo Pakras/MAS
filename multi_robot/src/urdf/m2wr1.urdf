@@ -1,4 +1,4 @@
-<robot name="m2wr" xmlns:xacro="https://www.ros.org/wiki/xacro" >
+<robot name="m2wr1" xmlns:xacro="https://www.ros.org/wiki/xacro" >
     
   <material name="black">
     <color rgba="0.0 0.0 0.0 1.0"/>
@@ -26,15 +26,14 @@
   </material>  
   
   <gazebo reference="link_chassis">
-    <material>Gazebo/Blue</material>
+    <material>Gazebo/Green</material>
   </gazebo>
   <gazebo reference="link_left_wheel">
-    <material>Gazebo/Blue</material>
+    <material>Gazebo/Green</material>
   </gazebo>
   <gazebo reference="link_right_wheel">
-    <material>Gazebo/Blue</material>
+    <material>Gazebo/Green</material>
   </gazebo>
-    
   <link name="link_chassis">
     <!-- pose and inertial -->
     <pose>0 0 0.1 0 0 0</pose>
@@ -56,7 +55,7 @@
       <geometry>
         <box size="0.5 0.3 0.07"/>
       </geometry>
-      <material name="Orange"/>
+      <material name="blue"/>
     </visual>
     
     <!-- caster front -->

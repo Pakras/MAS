@@ -7,7 +7,9 @@
  
   <!-- start gui -->
    <node name="gazebo_gui" pkg="gazebo" type="gui" respawn="false" output="screen"/> 
+
  
   <!-- include our robots -->
-  <include file="$(find multi_robot)/src/launch/robots.launch"/>
+  <include file="$(find multi_robot)/src/launch/robotsall.launch"/>
+
 </launch> 
